@@ -11,7 +11,7 @@ try{
 		exit();
 	}
 
-	$sql = "SELECT usuario FROM clientes WHERE usuario = '" . $usuario . "'";
+	$sql = "SELECT usuario, password FROM clientes WHERE usuario = '" . $usuario . "' ";
 	$result = $conn->query($sql);
 
 	//$result = mysqli_query("SELECT * from usuarios where usuario='" . $usuario . "'");
@@ -22,13 +22,9 @@ try{
 			$_SESSION['usuario'] = $usuario;
 
 			header("Location: inicio.php");
-		} else {
-			echo "Usuario o Contraseña Incorrecta";
-			header("Location: index.php");
-			exit();
-		}
+		} 
 	} else {
-		echo "Otro error";
+		echo "Usuario o Contraseña Incorrecta";
 		header("Location: index.php");
 		exit();
 	}
