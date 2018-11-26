@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+.dropdown-item:hover {
+	/*color: white;*/
+	background-color: #fddc5a;
+}
+
+tbody {
+	text-align: center;
+	color: #16293b;
+	margin-top: 2px;
+	-webkit-box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.48);
+	-moz-box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.48);
+	box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.48);
+}
+
+thead {
+	text-align: center;
+	color: #16293b;
+	background-color: #fddc5a;
+	-webkit-box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.48);
+	-moz-box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.48);
+	box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.48);
+}
+
+.bg-amarillo {
+	color: #16293b;
+	background-color: #fddc5a;
+}
+
+.btn-amarillo {
+	color: #16293b;
+	background-color: #fddc5a;
+	border-color: rgb(253, 220, 90);  
+}
+
+.btn-amarillo:focus,
+.btn-amarillo.focus {
+  color: #16293b;
+  background-color: #fddc5a;
+}
+
+.btn-amarillo:hover {
+	color: #16293b;
+	border: 2px outset #fddc5a; 
+	background-color: white;
+}
+
+.btn-amarillo:active,
+.btn-amarillo.active,
+.open > .dropdown-toggle.btn-amarillo {
+  color: #16293b;
+  background-color: #fddc5a;
+  border-color: #b7940b;
+}
+.btn-amarillo:active:hover,
+.btn-amarillo.active:hover,
+.open > .dropdown-toggle.btn-amarillo:hover,
+.btn-amarillo:active:focus,
+.btn-amarillo.active:focus,
+.open > .dropdown-toggle.btn-amarillo:focus,
+.btn-amarillo:active.focus,
+.btn-amarillo.active.focus,
+.open > .dropdown-toggle.btn-amarillo.focus {
+  color: #16293b;
+  background-color: #d3ac10;
+  border-color: #b7940b;
+}
+.btn-amarillo:active,
+.btn-amarillo.active,
+.open > .dropdown-toggle.btn-amarillo {
+  background-image: none;
+}
+.btn-amarillo.disabled:hover,
+.btn-amarillo[disabled]:hover,
+fieldset[disabled] .btn-amarillo:hover,
+.btn-amarillo.disabled:focus,
+.btn-amarillo[disabled]:focus,
+fieldset[disabled] .btn-amarillo:focus,
+.btn-amarillo.disabled.focus,
+.btn-amarillo[disabled].focus,
+fieldset[disabled] .btn-amarillo.focus {
+  background-color: #fddc5a;
+  border-color: #fddc5a;
+}
+.btn-amarillo .badge {
+  color: #fddc5a;
+  background-color: #16293b;
+}
+
+.card-header {
+	color: #16293b;
+	font-weight: bold;
+	background-color: #fddc5a;
+}
+
+.multi-horizontal {
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+}
+
+.pdfobject-container { 
+	height: 60rem; border: 1rem solid rgba(0,0,0,.1); 
+}
