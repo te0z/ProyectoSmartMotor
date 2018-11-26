@@ -35,14 +35,14 @@
 			  	<div class="card-body">
 			    	<center>
 				    	<form id="form-login" method="POST">
-							<input type="text" class="form-control" id="nnombre" name="nnombre" placeholder="Usuario" style="width: 20%;" />
-							<br />
+						<input type="text" class="form-control" id="nnombre" name="nnombre" placeholder="Usuario" style="width: 20%;" />
+						<br />
 
-							<input type="password" class="form-control" id="npassword" name="npassword" placeholder="Contraseña" style="width: 20%;"/>
-							<br />
-						
-							<button class="btn btn-amarillo" type="submit">Inicar Sesion</button>
-						</form>
+						<input type="password" class="form-control" id="npassword" name="npassword" placeholder="Contraseña" style="width: 20%;"/>
+						<br />
+
+						<button class="btn btn-amarillo" type="submit">Inicar Sesion</button>
+					</form>
 					</center>
 			  	</div>
 			  	<div class="card-footer bg-amarillo">
@@ -72,7 +72,7 @@
 				debug: true,errorElement: "label",
 				submitHandler: function(form) {
 					$("#alert").show();
-					$("#alert").html("<p>Aguande unos instantes...</p>");
+					$("#alert").html("<p>Aguarde un momento, validando datos...</p>");
 					setTimeout(function(){
 						$("#alert").fadeOut('slow');
 					}, 500);
@@ -85,10 +85,10 @@
 						success: function(msg) {
 							//$("#alert").html(msg);
 							document.getElementById("nnombre").value="";
-                   			document.getElementById("npassword").value="";
-                   			setTimeout(function() {
-                   				$("#alert").fadeOut('slow');
-                   			}, 500);
+                   					document.getElementById("npassword").value="";
+                   					setTimeout(function() {
+                   						$("#alert").fadeOut('slow');
+                   					}, 500);
 						}
 					});
 				}
